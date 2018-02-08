@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 测试</title>
+
+    <style type="text/css">
+    .input{
+        width:98%;
+        height:38px;
+    }
+    .button{
+        width:60%;
+    height:20px;
+    background:#fffeff;
+    }
+
+
+
+    </style>
+    <script type="text/javascript">
+       //js调用as
+    function say(){
+        var name = document.getElementById("textName").value;
+        app.sayHello();
+    }
+
+    //as调用js
+    function showName(name){
+        alert(name)
+        document.getElementById("textName").value = name;
+        document.getElementById("buttontwo").innerHTML = name;
+    }
+
+
+    </script>
+</head>
+<body>
+<input id="textName" class="input">
+<br/>
+<hr>
+<button class="button" onclick="say()">say hello</button>
+<button id="buttontwo">say hello</button>
+</body>
+</html>
